@@ -12,7 +12,8 @@ class BankAccount
     @balance
   end
 
-  def withdraw
-    
+  def withdraw(amount)
+    @balance -= amount
+    "Balance = £#{amount}"
   end
 end
