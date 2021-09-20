@@ -16,4 +16,8 @@ class BankAccount
     @balance -= amount
     "Balance = £#{@balance}"
   end
+
+  def show_balance
+    "Balance = £#{@balance}"
+  end
 end
