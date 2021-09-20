@@ -6,13 +6,13 @@ describe "deposit" do
 
     account.deposit(100)
 
-    expect(account.deposit(100).to eq "Balance = £100")
+    expect(account.deposit(100)).to eq "Balance = £100"
   end
   
   it "adds the amount to the current balance" do
     account = BankAccount.new
     
-    amount.deposit(100)
+    account.deposit(100)
     
     expect(account.balance).to eq 100
   end
