@@ -11,4 +11,8 @@ class BankAccount
   def balance
     @balance
   end
+
+  def withdraw
+    
+  end
 end
