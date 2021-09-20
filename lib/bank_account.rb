@@ -5,7 +5,7 @@ class BankAccount
   
   def deposit(amount)
     @balance += amount
-    "Balance = £#{@balance}"
+    show_balance
   end
 
   def balance
@@ -14,7 +14,7 @@ class BankAccount
 
   def withdraw(amount)
     @balance -= amount
-    "Balance = £#{@balance}"
+    show_balance
   end
 
   def show_balance
