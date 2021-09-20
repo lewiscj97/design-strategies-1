@@ -4,8 +4,6 @@ describe "deposit" do
   it "displays the new balance after depositing the supplied amount" do
     account = BankAccount.new
 
-    account.deposit(100)
-
     expect(account.deposit(100)).to eq "Balance = £100"
   end
   
