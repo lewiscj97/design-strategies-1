@@ -34,3 +34,14 @@ describe "withdraw" do
     expect(account.balance).to eq 50
   end
 end
+
+describe "show_balance" do
+  it "displays the new balance after withdrawing the supplied amount" do
+    account = BankAccount.new
+
+    account.deposit(120)
+    account.withdraw(50)
+
+    expect(account.show_balance).to eq "Balance = £70"
+  end
+end
