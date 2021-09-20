@@ -17,3 +17,22 @@ describe "deposit" do
     expect(account.balance).to eq 100
   end
 end
+
+describe "withdraw" do
+  it "displays the new balance after withdrawing the supplied amount" do
+    account = BankAccount.new
+
+    account.deposit(100)
+
+    expect(account.withdraw(50)).to eq "Balance = £50"
+  end
+  
+  it "subtracts the amount from the current balance" do
+    account = BankAccount.new
+    
+    account.deposit(100)
+    account.withdraw(50)
+    
+    expect(account.balance).to eq 50
+  end
+end
